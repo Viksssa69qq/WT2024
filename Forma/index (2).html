@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <fieldset class="form_fieldset"> 
+        <h1>Форма обратной связи</h1>
+        <div class="inputConf">
+            <p>Name</p>
+            <input type="text" id="name"  placeholder="Anna" required>
+        </div>
+
+        <div class="inputConf">
+            <p>Email</p>
+            <input type="email" id="email"  placeholder="Anna@uni-dubna.ru" required>
+        </div>
+
+        <div class="inputConf">
+            <p>Theme</p>
+            <select id="theme" class="select_theme">
+                <option>Жалоба</option>
+                <option>Предложение о работе</option>
+                <option>Предложение о сотрудничестве</option>
+                <option>Другое</option>
+            </select>
+        </div>
+
+        <div class="inputConf">
+            <p>Comment</p>
+            <textarea id="comment"> </textarea>
+        </div>
+
+        <div>
+            <button id="send">Отправить</button>
+        </div>
+
+    </fieldset>
+
+    <div id="answer_box">
+
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
