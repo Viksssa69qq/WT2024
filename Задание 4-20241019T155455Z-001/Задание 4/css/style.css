@@ -1,0 +1,99 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	background: linear-gradient(to right, #141e30, #243b55, #501a89, #141e30);
+}
+
+.menu {
+	display: flex; /* Делаем элементы меню flex-элементами */
+	position: fixed;  /* Фиксируем меню кверху экрана */
+	top: 0;       /* Позиционируем меню сверху */
+	left: 0;      /* Позиционируем меню слева */
+	width: 100%;  /* Занимает всю ширину экрана */
+	background-color: #a6c9e2; /* Цвет фона меню */
+	justify-content: center; /* Центрируем меню по горизонтали */
+	gap: 20px; /* Добавляем пробел между элементами */
+	padding: 10px 0; /* Добавляем отступ сверху и снизу */
+	z-index: 10;  /* Устанавливаем более высокий z-index, чтобы меню было поверх фона */
+}
+
+.menu a { /* Стиль ссылок в меню */
+	text-decoration: none; 
+	color: black; 
+	padding: 10px 20px; /* Добавляем отступы */
+	background-color: #d8b4e3;
+	border-radius: 5px; 
+}
+.container {
+	background-color: #a6c9e2;
+	padding: 20px; /* Отступ внутри контейнера */
+	border-radius: 10px; /* Скругленные углы */
+	margin: 50px auto; /* Отступ сверху и снизу, центрирование */
+	max-width: 800px; /* Максимальная ширина контейнера */
+	text-align: justify;
+}
+.responsive-image {margin-bottom: 20px;
+	display: block; /* Занимает всю ширину родительского элемента */
+    margin: 0 auto; /* Выравнивание по центру */
+	width: 100px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота изображения */
+    border: 3px solid #0000ff; /* Добавляем красную рамку */
+    border-radius: 5px; /* Добавляем скругленные углы */
+}
+ol {
+	list-style-type: decimal; /* Тип нумерации - арабские цифры */
+	margin-left: 40px; /* Отступ слева */
+}
+
+li {
+	margin-bottom: 10px; /* Отступ снизу */
+}
+h2 {
+    font-size: 24px; /* Увеличиваем размер шрифта для заголовков */
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	margin-top: 70px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid #ff0000; /* Выделение таблицы рамкой */
+    background-color: #f2f2f2; /* Выделение таблицы цветом */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Дополнительный стиль для столбца "Особенности" */
+td:nth-child(4) { 
+    width: 40%; /* Задаем ширину столбца */
+}
+
+.image-container {
+    text-align: center; /* Выравниваем изображение по центру */
+    margin-bottom: 10px; /* Отступ снизу от изображения */
+}
+
+.znak-image {
+    max-width: 90px; /* Изображение не будет шире родительского элемента */
+    height: auto; /* Высота будет подстраиваться пропорционально ширине */
+}
+.news{
+	margin-bottom: 20px;
+	border: 1px solid #d8b4e3;
+	padding: 15px;
+}
